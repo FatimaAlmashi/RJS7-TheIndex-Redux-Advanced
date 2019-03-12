@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import { connect } from "react-redux";
 class AuthorCard extends Component {
   render() {
     const author = this.props.author;
@@ -27,4 +27,7 @@ class AuthorCard extends Component {
   }
 }
 
-export default AuthorCard;
+export default connect(
+  null,
+  null
+)(AuthorCard);
